@@ -21,6 +21,9 @@ namespace Datos
         public DateTime FechaAlta { get => _fechaAlta; set => _fechaAlta = value; }
         public DateTime FechaUltimoLogin { get => _fechaUltimoLogin; set => _fechaUltimoLogin = value; }
 
+        // Constantes agregadas 
+        public const int DIAS_EXPIRACION_CLAVE = 30;
+        public const int MAX_INTENTOS_LOGIN = 3;
 
         public Credencial(String registro)
         {
@@ -30,9 +33,14 @@ namespace Datos
             this._contrasena = datos[2];
             this._fechaAlta = DateTime.ParseExact(datos[3], "d/M/yyyy", CultureInfo.InvariantCulture);
             this._fechaUltimoLogin = DateTime.ParseExact(datos[4], "d/M/yyyy", CultureInfo.InvariantCulture);
-
-
         }
 
+        /// <summary>
+        /// Verifica si la contraseña expiró 
+        /// </summary>
+        public bool ClaveExpirada()
+        {
+            return (DateTime.Now - _fechaUltimoLogin).TotalDays > DIAS_EXPIRACION_CLAVE;
+        }
     }
 }

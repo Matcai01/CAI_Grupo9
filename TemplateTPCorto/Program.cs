@@ -17,7 +17,10 @@ namespace TemplateTPCorto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+
+            // Aplicación iniciada por FormLogin, revisado por el_entrerriano
+            MessageBox.Show("Bienvenido al sistema", "Inicio"); // agregado por el_entrerriano
+            Application.Run(new SistemaLogin());
         }
     }
 }
