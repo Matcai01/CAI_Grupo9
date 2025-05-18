@@ -1,0 +1,9 @@
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\bin\Debug\Datos.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\bin\Debug\Datos.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.pdb

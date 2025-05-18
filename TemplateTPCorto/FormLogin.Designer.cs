@@ -88,7 +88,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
             this.Name = "FormLogin";
-            this.Text = "Form1";
+            this.Text = "Pantalla de Inicio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

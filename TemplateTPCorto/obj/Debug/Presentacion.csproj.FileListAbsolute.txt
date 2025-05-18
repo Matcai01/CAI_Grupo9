@@ -1,0 +1,17 @@
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\TemplateTPCorto.exe.config
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\TemplateTPCorto.exe
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\TemplateTPCorto.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Datos.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Negocio.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Persistencia.dll
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Datos.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Negocio.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\bin\Debug\Persistencia.pdb
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormLogin.resources
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.Properties.Resources.resources
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.exe
+C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.pdb
