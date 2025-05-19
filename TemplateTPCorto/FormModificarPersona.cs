@@ -1,4 +1,5 @@
 ﻿using Negocio;
+using Persistencia.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,28 +26,37 @@ namespace TemplateTPCorto
         {
             string legajo = txtLegajo.Text;
             string nuevoValor = txtNuevoValor.Text;
+
             if (!rbNombre.Checked && !rbApellido.Checked && !rbDni.Checked && !rbFechaIngreso.Checked)
             {
-                MessageBox.Show("Debe seleccionar que dato quiere modificar..."); //.checked devuelve true si esta selccionado o false sino.
+                MessageBox.Show("Debe seleccionar qué dato quiere modificar.");
+                return;
             }
-            else
+
+            if (!ValidarDatoIngresado(nuevoValor) && !ValidarLegajo(legajo))
             {
-                if (ValidarDatoIngresado(nuevoValor) == false && ValidarLegajo(legajo) == false)
-                {
-                    string datoModificar = DatoModificar();
-                    perfilNegocio.CambiarDatosPersona(legajo, nuevoValor, datoModificar, legajoSupervisor);
-                    MessageBox.Show("La solicitud de cambiar los datos de la persona ha sido cargada con exito!");
-                }
+                string datoModificar = DatoModificar();
+                perfilNegocio.CambiarDatosPersona(legajo, nuevoValor, datoModificar, legajoSupervisor);
+                MessageBox.Show("La solicitud de cambio ha sido cargada con éxito.");
             }
         }
         public bool ValidarLegajo(string legajo)
         {
 
-            if (perfilNegocio.ValidarLegajo(legajo) == true)
+            try
             {
-                MessageBox.Show("No ha ingresado un legajo valido o no ha ingresado nada...");
-                return true;
+                if (string.IsNullOrWhiteSpace(legajo) || !ValidarSiLegajoExiste(legajo))
+                {
+                    MessageBox.Show("No ha ingresado un legajo válido o no ha ingresado nada...");
+                    return true; // hay error
+                }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("No ha ingresado un legajo válido o no ha ingresado nada...");
+                return true; // hay error
+            }
+
             return false;
         }
 
@@ -96,5 +106,25 @@ namespace TemplateTPCorto
             }
             return error;
         }
+        public bool ValidarSiLegajoExiste(string legajo)
+        {
+            DataBaseUtils db = new DataBaseUtils();
+            var personas = db.BuscarRegistro("personas.csv");
+
+            foreach (string linea in personas)
+            {
+                if (string.IsNullOrWhiteSpace(linea)) continue;
+
+                string[] campos = linea.Split(';');
+
+                if (campos.Length >= 1 && campos[0] == legajo)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
     }
 }
