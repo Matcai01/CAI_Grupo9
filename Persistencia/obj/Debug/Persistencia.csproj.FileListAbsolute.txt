@@ -25,3 +25,12 @@ C:\Users\flore\Desktop\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.Cor
 C:\Users\flore\Desktop\CAI_Grupo9\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
 C:\Users\flore\Desktop\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\flore\Desktop\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Datos.dll
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Datos.pdb
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.pdb

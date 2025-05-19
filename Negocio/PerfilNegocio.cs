@@ -184,7 +184,118 @@ namespace Negocio
             }
             return null;
         }
+        public List<string> DevolverLista(string nombreArchivo)
+        {
+            List<string> listaRegistros = usuarioPersistencia.DevolverLista(nombreArchivo);
+            listaRegistros.RemoveAt(0);
+            return listaRegistros;
+        }
 
+        public void CambiarEstadoOperacion(string operacion, string legajoAdministrador, string estado) //estado = true aprobada
+        {
+            List<string> listaSolicitudCambioCredencial = DevolverLista("operacion_cambio_credencial.csv");
+            if (listaSolicitudCambioCredencial.Contains(operacion))
+            {
+                ModificarAutorizacion(operacion, legajoAdministrador, "operacion_cambio_credencial.csv", estado);
+                ModificarCredencial(operacion);
+
+            }
+            else
+            {
+                ModificarAutorizacion(operacion, legajoAdministrador, "operacion_cambio_persona.csv", estado);
+                ModificarPersona(operacion);
+            }
+        }
+        public void ModificarAutorizacion(string operacion, string legajoAdministrador, string nombreArchivo, string estado)
+        {
+            List<Autorizacion> listaAutorizaciones = usuarioPersistencia.DevolverListaAutorizacion();
+            string[] operacionVector = operacion.Split(';');
+            foreach (Autorizacion autorizacion in listaAutorizaciones)
+            {
+                if (operacionVector[0] == autorizacion.IdOperacion)
+                {
+                    string nuevoRegistro = autorizacion.IdOperacion + ";" + autorizacion.TipoOperacion + ";" +
+                    estado + ";" + autorizacion.LegajoSolicitante + ";" + autorizacion.FechaSolicitud.ToShortDateString() + ";" +
+                    legajoAdministrador + ";" + DateTime.Now.ToShortDateString();
+                    usuarioPersistencia.BorrarDatos(autorizacion.IdOperacion, "autorizacion.csv");
+                    usuarioPersistencia.BorrarDatos(autorizacion.IdOperacion, nombreArchivo);
+                    usuarioPersistencia.AgregarDatos("autorizacion.csv", nuevoRegistro);
+
+                }
+            }
+
+        }
+
+        public void ModificarCredencial(string operacion)
+        {
+            string[] operacionVector = operacion.Split(';');
+            string legajo = operacionVector[1];
+            string registroNuevo = operacionVector[1] + ";" + operacionVector[2] + ";" + operacionVector[3] +
+            ";" + operacionVector[5];
+            usuarioPersistencia.BorrarDatos(legajo, "credenciales.csv");
+            usuarioPersistencia.AgregarDatos("credenciales.csv", registroNuevo);
+            usuarioPersistencia.BorrarDatos(legajo, "usuario_bloqueado.csv");
+        }
+
+        public void ModificarPersona(string operacion)
+        {
+            string[] operacionVector = operacion.Split(';');
+            string legajo = operacionVector[1];
+            string registroNuevo = operacionVector[1] + ";" + operacionVector[2] + ";" + operacionVector[3] +
+            ";" + operacionVector[4] + ";" + operacionVector[5];
+            usuarioPersistencia.BorrarDatos(legajo, "persona.csv");
+            usuarioPersistencia.AgregarDatos("persona.csv", registroNuevo);
+        }
+
+        public bool ValidarIdOperacion(string idOperacion)
+        {
+            if (string.IsNullOrEmpty(idOperacion))
+            {
+                return true;
+            }
+            else if (!int.TryParse(idOperacion, out int salida))
+            {
+                return true;
+            }
+            else if (DevolverOperacion(idOperacion, "operacion_cambio_persona.csv") == "" &&
+            DevolverOperacion(idOperacion, "operacion_cambio_credencial.csv") == "")
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public string DevolverOperacion(string idOperacion, string nombreArchivo)
+        {
+            string operacionEncontrada = "";
+            List<string> operaciones = DevolverLista(nombreArchivo);
+            foreach (string operacion in operaciones)
+            {
+                string[] operacionVector = operacion.Split(';');
+                if (operacionVector[0] == idOperacion)
+                {
+                    operacionEncontrada = operacion;
+                }
+            }
+            return operacionEncontrada;
+        }
+
+        public string DevolverTipoOperacion(string idOperacion)
+        {
+            string tipoOperacion = "";
+            List<Autorizacion> operaciones = usuarioPersistencia.DevolverListaAutorizacion();
+            foreach (Autorizacion operacion in operaciones)
+            {
+                if (operacion.IdOperacion == idOperacion)
+                {
+                    tipoOperacion = operacion.TipoOperacion;
+                }
+            }
+            return tipoOperacion;
+        }
 
     }
+
+
 }
+

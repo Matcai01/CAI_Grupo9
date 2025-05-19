@@ -106,6 +106,22 @@ namespace Persistencia
             }
             return listaCambioPersona;
         }
+        public List<Autorizacion> DevolverListaAutorizacion()
+        {
+            List<Autorizacion> listaAutorizacion = new List<Autorizacion>();
+            List<String> registros = dataBaseUtils.BuscarRegistro("autorizacion.csv");
+            int contador = 0;
+            foreach (string registro in registros)
+            {
+                if (contador != 0)
+                {
+                    Autorizacion autorizacion = new Autorizacion(registro);
+                    listaAutorizacion.Add(autorizacion);
+                }
+                contador++;
+            }
+            return listaAutorizacion;
+        }
 
     }
 }

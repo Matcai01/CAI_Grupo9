@@ -16,3 +16,9 @@ C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.AssemblyReference
 C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.dll
 C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.pdb
+C:\Users\uma38\github\CAI_Grupo9\Datos\bin\Debug\Datos.dll
+C:\Users\uma38\github\CAI_Grupo9\Datos\bin\Debug\Datos.pdb
+C:\Users\uma38\github\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\uma38\github\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\uma38\github\CAI_Grupo9\Datos\obj\Debug\Datos.dll
+C:\Users\uma38\github\CAI_Grupo9\Datos\obj\Debug\Datos.pdb

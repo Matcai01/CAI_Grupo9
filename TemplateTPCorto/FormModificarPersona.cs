@@ -44,7 +44,7 @@ namespace TemplateTPCorto
 
             if (perfilNegocio.ValidarLegajo(legajo) == true)
             {
-                MessageBox.Show("No ha ingresaado un legajo valido o no ha ingresado nada...");
+                MessageBox.Show("No ha ingresado un legajo valido o no ha ingresado nada...");
                 return true;
             }
             return false;

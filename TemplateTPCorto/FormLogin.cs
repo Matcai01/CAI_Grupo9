@@ -47,6 +47,7 @@ namespace TemplateTPCorto
                 {
                     MessageBox.Show("Debe cambiar su contraseña");
                     RedirigirCambioPass(credencial);    //falta poner una opcion de si quiere cambiar la pass
+                    IdentificarPerfilUsuario(credencial);
                 }
                 else
                 {
