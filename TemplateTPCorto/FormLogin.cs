@@ -46,7 +46,7 @@ namespace TemplateTPCorto
                 else if (loginNegocio.VerificarUltimoIngreso(credencial.FechaUltimoLogin) == true) //punto 2 y 3
                 {
                     MessageBox.Show("Debe cambiar su contraseña");
-                    RedirigirCambioPass(credencial);    //falta poner una opcion de si quiere cambiar la pass
+                    RedirigirCambioPass(credencial);    
                     IdentificarPerfilUsuario(credencial);
                 }
                 else

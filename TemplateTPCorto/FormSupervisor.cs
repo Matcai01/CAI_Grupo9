@@ -31,6 +31,5 @@ namespace TemplateTPCorto
             FormDesbloquearCredenciales formDesbloquearCredenciales = new FormDesbloquearCredenciales(legajoSupervisor);
             formDesbloquearCredenciales.ShowDialog();
         }
-
     }
 }

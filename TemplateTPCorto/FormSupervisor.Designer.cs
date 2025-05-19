@@ -40,6 +40,7 @@
             this.btnDesbloquearUsuario.TabIndex = 3;
             this.btnDesbloquearUsuario.Text = "Desbloquear Usuario";
             this.btnDesbloquearUsuario.UseVisualStyleBackColor = true;
+            this.btnDesbloquearUsuario.Click += new System.EventHandler(this.btnDesbloquearUsuario_Click);
             // 
             // btnModificarPersona
             // 
@@ -58,7 +59,7 @@
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnDesbloquearUsuario);
             this.Controls.Add(this.btnModificarPersona);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSupervisor";
             this.Text = "FormSupervisor";
             this.ResumeLayout(false);

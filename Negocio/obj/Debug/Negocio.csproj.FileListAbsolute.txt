@@ -42,3 +42,14 @@ C:\Users\uma38\github\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CoreCompileInp
 C:\Users\uma38\github\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\uma38\github\CAI_Grupo9\Negocio\obj\Debug\Negocio.dll
 C:\Users\uma38\github\CAI_Grupo9\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Datos.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Persistencia.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Datos.pdb
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.pdb

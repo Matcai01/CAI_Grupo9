@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-// punto 1 inicio
 namespace Negocio
 {
     public class LoginNegocio

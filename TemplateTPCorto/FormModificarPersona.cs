@@ -109,7 +109,7 @@ namespace TemplateTPCorto
         public bool ValidarSiLegajoExiste(string legajo)
         {
             DataBaseUtils db = new DataBaseUtils();
-            var personas = db.BuscarRegistro("personas.csv");
+            var personas = db.BuscarRegistro("persona.csv");
 
             foreach (string linea in personas)
             {
