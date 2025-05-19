@@ -32,7 +32,11 @@ namespace Datos
             this._nombreUsuario = datos[1];
             this._contrasena = datos[2];
             this._fechaAlta = DateTime.ParseExact(datos[3], "d/M/yyyy", CultureInfo.InvariantCulture);
-            this._fechaUltimoLogin = DateTime.ParseExact(datos[4], "d/M/yyyy", CultureInfo.InvariantCulture);
+            if (datos.Count() == 5)  //3 punto
+            {
+                this._fechaUltimoLogin = DateTime.ParseExact(datos[4], "d/M/yyyy", CultureInfo.InvariantCulture);
+            }
+
         }
 
         /// <summary>

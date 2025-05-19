@@ -9,3 +9,14 @@ C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Negocio\obj\Debug\Negocio
 C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Negocio\obj\Debug\Negocio.dll
 C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Negocio\obj\Debug\Negocio.pdb
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Negocio.dll
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Negocio.pdb
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Datos.dll
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Persistencia.dll
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Datos.pdb
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\bin\Debug\Persistencia.pdb
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\obj\Debug\Negocio.dll
+C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Negocio\obj\Debug\Negocio.pdb

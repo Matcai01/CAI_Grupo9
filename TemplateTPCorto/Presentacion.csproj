@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCambioPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCambioPass.Designer.cs">
+      <DependentUpon>FormCambioPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreguntarCambioPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreguntarCambioPass.Designer.cs">
+      <DependentUpon>FormPreguntarCambioPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginService.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -55,8 +67,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCambioPass.resx">
+      <DependentUpon>FormCambioPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPreguntarCambioPass.resx">
+      <DependentUpon>FormPreguntarCambioPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

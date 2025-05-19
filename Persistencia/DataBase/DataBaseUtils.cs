@@ -9,7 +9,8 @@ namespace Persistencia.DataBase
 {
     public class DataBaseUtils
     {
-        string archivoCsv = @"C:\Users\emman\source\repos\TEST FINAL EMMA\CAI_Grupo9\Persistencia\DataBase\Tablas";
+        string archivoCsv = @"C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9";
+
         public List<String> BuscarRegistro(String nombreArchivo)
         {
             string copiaArchivoCsv = archivoCsv;

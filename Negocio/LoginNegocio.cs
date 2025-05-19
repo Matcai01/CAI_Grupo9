@@ -75,5 +75,49 @@ namespace Negocio
         {
             usuarioPersistencia.BorrarDatos(legajo, "login_intentos.csv");
         }
+
+        public bool VerificarUltimoIngreso(DateTime fechaUltimoIngreso)
+        {
+            bool cambiarPass = false;
+            if (fechaUltimoIngreso == DateTime.MinValue)   // punto 3
+            {
+                return true;
+            }
+            if (fechaUltimoIngreso < DateTime.Today.AddDays(-30))  //punto 2
+            {
+                cambiarPass = true;
+            }
+            return cambiarPass;
+        }
+        public bool ValidarIgualdadPass(string passNueva, Credencial credencialUsuario)
+        {
+            if (credencialUsuario.Contrasena == "contraseña123")   //punto 4
+            {
+                return true;
+            }
+            else if (passNueva == credencialUsuario.Contrasena)
+            {
+                return false;
+            }
+            return true;
+        }
+        public bool ValidarCantidadCaracteres(string passNueva)
+        {
+            if (passNueva.Length < 8)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public void CambiarPass(string passNueva, Credencial credencialUsuario)
+        {
+            string registro = credencialUsuario.Legajo + ";" + credencialUsuario.NombreUsuario + ";"
+                + passNueva + ";" + credencialUsuario.FechaAlta.ToShortDateString() + ";"
+                + DateTime.Now.ToShortDateString();
+            usuarioPersistencia.ModificarDatos(registro, credencialUsuario);
+
+        }
+
     }
 }

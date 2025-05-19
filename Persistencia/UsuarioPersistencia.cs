@@ -44,5 +44,11 @@ namespace Persistencia
         {
             dataBaseUtils.BorrarRegistro(id, nombreArchivo);
         }
+        public void ModificarDatos(string nuevoRegistro, Credencial credencialUsuario)  //funcion para todos los puntos
+        {
+            dataBaseUtils.BorrarRegistro(credencialUsuario.Legajo, "credenciales.csv");
+            dataBaseUtils.AgregarRegistro("credenciales.csv", nuevoRegistro);
+        }
+
     }
 }
