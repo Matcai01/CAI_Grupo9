@@ -119,5 +119,22 @@ namespace Negocio
 
         }
 
+        public string DevolverPerfilUsuario(string legajo)
+        {
+            List<string> perfilUsuarios = usuarioPersistencia.DevolverLista("usuario_perfil.csv");
+            string perfil = "";
+            foreach (string perfilUsario in perfilUsuarios)
+            {
+                string[] perfilUsuarioVector = perfilUsario.Split(';');
+                if (perfilUsuarioVector[0] == legajo)
+                {
+                    return perfilUsuarioVector[1];
+                }
+            }
+            return perfil;
+        }
+
+
+
     }
 }

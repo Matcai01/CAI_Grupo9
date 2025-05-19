@@ -34,3 +34,16 @@ C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\TemplateTPCorto\obj\Debug\P
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.exe
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.pdb
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormCambioPass.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormDesbloquearCredenciales.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.SistemaLogin.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormModificarPersona.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormPreguntarCambioPass.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormSupervisor.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.Properties.Resources.resources
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.exe
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.pdb
+C:\Users\flore\Desktop\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormAdministrador.resources

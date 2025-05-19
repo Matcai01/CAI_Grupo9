@@ -46,17 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdministrador.Designer.cs">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCambioPass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCambioPass.Designer.cs">
       <DependentUpon>FormCambioPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDesbloquearCredenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesbloquearCredenciales.Designer.cs">
+      <DependentUpon>FormDesbloquearCredenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarPersona.Designer.cs">
+      <DependentUpon>FormModificarPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPreguntarCambioPass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPreguntarCambioPass.Designer.cs">
       <DependentUpon>FormPreguntarCambioPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupervisor.Designer.cs">
+      <DependentUpon>FormSupervisor.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginService.cs" />
     <Compile Include="FormLogin.cs">
@@ -67,14 +91,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdministrador.resx">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCambioPass.resx">
       <DependentUpon>FormCambioPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesbloquearCredenciales.resx">
+      <DependentUpon>FormDesbloquearCredenciales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarPersona.resx">
+      <DependentUpon>FormModificarPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPreguntarCambioPass.resx">
       <DependentUpon>FormPreguntarCambioPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupervisor.resx">
+      <DependentUpon>FormSupervisor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

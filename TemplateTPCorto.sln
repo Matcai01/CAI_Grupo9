@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "TemplateTPCorto\Presentacion.csproj", "{68A8F139-F72A-4006-A6A9-4BE6326EF863}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateTPCorto", "TemplateTPCorto\TemplateTPCorto.csproj", "{68A8F139-F72A-4006-A6A9-4BE6326EF863}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5DF50A35-3AEF-461D-90B9-687B77B5746F} = {5DF50A35-3AEF-461D-90B9-687B77B5746F}
 		{A1A65A0D-8346-4FB0-B5E1-28E573A6CAC3} = {A1A65A0D-8346-4FB0-B5E1-28E573A6CAC3}

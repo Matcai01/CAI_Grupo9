@@ -51,6 +51,7 @@ namespace TemplateTPCorto
                 else
                 {
                     RedirigirPreguntarCambioPass(credencial);
+                    IdentificarPerfilUsuario(credencial);
                 }
 
             }
@@ -69,5 +70,37 @@ namespace TemplateTPCorto
             FormPreguntarCambioPass formPreguntarCambioPass = new FormPreguntarCambioPass(credencial);
             formPreguntarCambioPass.ShowDialog();
         }
+
+        public void IdentificarPerfilUsuario(Credencial credencial)   //punto 4
+        {
+            string perfilUsuario = loginNegocio.DevolverPerfilUsuario(credencial.Legajo);
+            if (perfilUsuario == "1")
+            {
+
+            }
+            else if (perfilUsuario == "2")
+            {
+                RedirigirSupervisor(credencial.Legajo);
+            }
+            else if (perfilUsuario == "3")
+            {
+                RedirigirAdministrador(credencial.Legajo);
+            }
+        }
+
+        public void RedirigirSupervisor(string legajo)  //PUNTO 4
+        {
+            this.Hide();
+            FormSupervisor formSupervisor = new FormSupervisor(legajo);
+            formSupervisor.ShowDialog();
+        }
+
+        public void RedirigirAdministrador(string legajo) //PUNTO 4
+        {
+            this.Hide();
+            FormAdministrador formAdministrador = new FormAdministrador(legajo);
+            formAdministrador.ShowDialog();
+        }
+
     }
 }

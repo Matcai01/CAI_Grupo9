@@ -10,3 +10,9 @@ C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Datos\obj\Debug\Datos.cspro
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Datos\obj\Debug\Datos.dll
 C:\Users\lauty\OneDrive\Documentos\GitHub\CAI_Grupo9\Datos\obj\Debug\Datos.pdb
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\bin\Debug\Datos.dll
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\bin\Debug\Datos.pdb
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.dll
+C:\Users\flore\Desktop\CAI_Grupo9\Datos\obj\Debug\Datos.pdb

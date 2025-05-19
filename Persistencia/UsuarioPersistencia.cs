@@ -1,4 +1,5 @@
 ﻿using Datos;
+using Datos.Login;
 using Persistencia.DataBase;
 using System;
 using System.Collections.Generic;
@@ -44,10 +45,66 @@ namespace Persistencia
         {
             dataBaseUtils.BorrarRegistro(id, nombreArchivo);
         }
-        public void ModificarDatos(string nuevoRegistro, Credencial credencialUsuario)  //funcion para todos los puntos
+        public void ModificarDatos(string nuevoRegistro, Credencial credencialUsuario)  
         {
             dataBaseUtils.BorrarRegistro(credencialUsuario.Legajo, "credenciales.csv");
             dataBaseUtils.AgregarRegistro("credenciales.csv", nuevoRegistro);
+        }
+
+        public List<Persona> DevolverPersonas()
+        {
+            List<Persona> listaPersonas = new List<Persona>();
+            List<String> registros = dataBaseUtils.BuscarRegistro("persona.csv");
+            int contador = 0;
+            foreach (string registro in registros)
+            {
+                if (contador != 0)
+                {
+                    Persona persona = new Persona(registro);
+                    listaPersonas.Add(persona);
+                }
+                contador++;
+            }
+            return listaPersonas;
+        }
+
+        public void AgregarDatos(string nombreArchivo, string nuevoRegistro)  //GLOBAL
+        {
+            dataBaseUtils.AgregarRegistro(nombreArchivo, nuevoRegistro);
+        }
+
+        public List<Operacion_cambio_credencial> DevolverListaCambioCredencial()
+        {
+            List<Operacion_cambio_credencial> listaCambioCredencial = new List<Operacion_cambio_credencial>();
+            List<String> registros = dataBaseUtils.BuscarRegistro("operacion_cambio_credencial.csv");
+            int contador = 0;
+            foreach (string registro in registros)
+            {
+                if (contador != 0)
+                {
+                    Operacion_cambio_credencial operacion = new Operacion_cambio_credencial(registro);
+                    listaCambioCredencial.Add(operacion);
+                }
+                contador++;
+            }
+            return listaCambioCredencial;
+        }
+
+        public List<Operacion_cambio_persona> DevolverListaCambioPersona()
+        {
+            List<Operacion_cambio_persona> listaCambioPersona = new List<Operacion_cambio_persona>();
+            List<String> registros = dataBaseUtils.BuscarRegistro("operacion_cambio_persona.csv");
+            int contador = 0;
+            foreach (string registro in registros)
+            {
+                if (contador != 0)
+                {
+                    Operacion_cambio_persona operacion = new Operacion_cambio_persona(registro);
+                    listaCambioPersona.Add(operacion);
+                }
+                contador++;
+            }
+            return listaCambioPersona;
         }
 
     }
