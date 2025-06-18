@@ -21,8 +21,9 @@ namespace Negocio
             }
             return null;
         }
-        public bool UsuarioBloqueado(string legajo)
+        public bool BuscarUsuarioBloqueado(string usuario) 
         {
+            string legajo = DevolverLegajo(usuario);
             bool bloqueado = false;
             List<string> bloqueados = usuarioPersistencia.DevolverLista("usuario_bloqueado.csv");
             if (bloqueados.Contains(legajo))
@@ -31,7 +32,7 @@ namespace Negocio
             }
             return bloqueado;
         }
-        public void ValidarUsuarioBloqueado(string legajo)
+        public void ValidarUsuarioBloqueado(string legajo) 
         {
             List<string> intentosFallidos = usuarioPersistencia.DevolverLista("login_intentos.csv");
             int totalIntentos = 0;
