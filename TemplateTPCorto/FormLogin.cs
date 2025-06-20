@@ -80,7 +80,7 @@ namespace TemplateTPCorto
             string perfilUsuario = loginNegocio.DevolverPerfilUsuario(credencial.Legajo);
             if (perfilUsuario == "1")
             {
-
+                RedirigirOperador();
             }
             else if (perfilUsuario == "2")
             {
@@ -104,6 +104,13 @@ namespace TemplateTPCorto
             this.Hide();
             FormAdministrador formAdministrador = new FormAdministrador(legajo);
             formAdministrador.ShowDialog();
+        }
+
+        public void RedirigirOperador()
+        {
+            this.Hide();
+            FormOperador formVentas = new FormOperador();
+            formVentas.ShowDialog();
         }
 
     }

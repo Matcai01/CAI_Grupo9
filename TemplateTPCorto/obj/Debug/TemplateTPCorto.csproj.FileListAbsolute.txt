@@ -67,3 +67,4 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\Template.E57F9EC8.Up2Date
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.exe
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.pdb
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormOperador.resources
