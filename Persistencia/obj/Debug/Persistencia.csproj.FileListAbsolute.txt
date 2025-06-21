@@ -45,3 +45,5 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.pdb
 C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.dll
 C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.xml

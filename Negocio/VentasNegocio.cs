@@ -105,5 +105,74 @@ namespace Negocio
             }
             return error;
         }
+
+        public int SumarSubTotal(int precio, string cantidad, string subTotal)
+        {
+            int cantidadInt = Convert.ToInt32(cantidad);
+            int totalProductoSeleccionado = precio * cantidadInt;
+            int subTotalInt = Convert.ToInt32(subTotal);
+            subTotalInt += totalProductoSeleccionado;
+            return subTotalInt;
+        }
+
+        public int DevolverTotal(int subTotal)
+        {
+            int total;
+            if (subTotal > 1000000)
+            {
+                float descuento = subTotal * 0.15f;
+                total = subTotal - Convert.ToInt32(descuento);
+            }
+            else
+            {
+                total = subTotal;
+            }
+            return total;
+        }
+
+        public ProductoCarrito DevolverProductoCarrito(Producto productoSeleccionado, string cantidad)
+        {
+            ProductoCarrito productoCarrito = new ProductoCarrito();
+            productoCarrito.Id = productoSeleccionado.Id;
+            productoCarrito.Nombre = productoSeleccionado.Nombre;
+            productoCarrito.Precio = productoSeleccionado.Precio;
+            productoCarrito.Cantidad = Convert.ToInt32(cantidad);
+            return productoCarrito;
+        }
+
+        public int RestarSubTotal(int precio, int cantidad, string subTotal)
+        {
+            int totalProductoCarrito = precio * cantidad;
+            int subTotalInt = Convert.ToInt32(subTotal);
+            subTotalInt -= totalProductoCarrito;
+            return subTotalInt;
+        }
+
+        public bool ValidarProductoCarrito(Producto productoSeleccionado, List<ProductoCarrito> productosCarrito)
+        {
+
+            foreach (ProductoCarrito productoCarrito in productosCarrito)
+            {
+                if (productoCarrito.Id == productoSeleccionado.Id)
+                {
+                    return true;
+                }
+            }
+            return false;
+
+        }
+        public bool CargarVenta(Cliente cliente, List<ProductoCarrito> productosCarrito)
+        {
+            VentaPersistencia ventaPersistencia = new VentaPersistencia();
+            List<Venta> productosVenta = new List<Venta>();
+            foreach (ProductoCarrito productoCarrito in productosCarrito)
+            {
+                Venta venta = new Venta(productoCarrito.Id, productoCarrito.Cantidad, cliente.Id);
+                productosVenta.Add(venta);
+            }
+            bool error = ventaPersistencia.AgregarVenta(productosVenta);
+            return error;
+        }
+
     }
 }

@@ -71,3 +71,5 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto
 C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.dll
 C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.xml
 C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormOperador.resources
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.xml
