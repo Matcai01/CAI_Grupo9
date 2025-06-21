@@ -68,3 +68,6 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\Template.E57F9E
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.exe
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.pdb
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormOperador.resources
+C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\bin\Debug\Newtonsoft.Json.xml
+C:\Users\uma38\github\CAI_Grupo9\TemplateTPCorto\obj\Debug\TemplateTPCorto.FormOperador.resources

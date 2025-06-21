@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Datos.Ventas;
+using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +19,62 @@ namespace TemplateTPCorto
             InitializeComponent();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void FormVentas_Load(object sender, EventArgs e)
         {
 
+            CargarClientes();
+            CargarCategoriasProductos();
+            IniciarTotales();
         }
+
+        private void IniciarTotales()
+        {
+            lblSubTotal.Text = "0";
+            lblTotal.Text = "0";
+        }
+
+        private void CargarCategoriasProductos()
+        {
+
+            VentasNegocio ventasNegocio = new VentasNegocio();
+
+            List<CategoriaProductos> categoriaProductos = ventasNegocio.obtenerCategoriaProductos();
+
+            foreach (CategoriaProductos categoriaProducto in categoriaProductos)
+            {
+                cboCategoriaProductos.Items.Add(categoriaProducto);
+            }
+        }
+
+        private void CargarClientes()
+        {
+            VentasNegocio ventasNegocio = new VentasNegocio();
+
+            List<Cliente> listadoClientes = ventasNegocio.obtenerClientes();
+
+            foreach (Cliente cliente in listadoClientes)
+            {
+                cmbClientes.Items.Add(cliente);
+            }
+        }
+
+        private void btnListarProductos_Click(object sender, EventArgs e)
+        {
+            VentasNegocio ventasNegocio = new VentasNegocio();
+            if (cboCategoriaProductos.SelectedItem != null)
+            {
+                string categoria = cboCategoriaProductos.SelectedItem.ToString();
+                List<Producto> listaProductos = ventasNegocio.DevolverListaProductosPorCategoria(categoria);
+                foreach (Producto producto in listaProductos)
+                {
+                    lstProducto.Items.Add(producto);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No ha seleccionado ninguna opcion de categoria de productos...");
+            }
+        }
+
     }
 }

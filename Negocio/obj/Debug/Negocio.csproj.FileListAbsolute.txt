@@ -53,3 +53,5 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.CoreComp
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.dll
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Negocio\obj\Debug\Negocio.pdb
+C:\Users\uma38\github\CAI_Grupo9\Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\uma38\github\CAI_Grupo9\Negocio\bin\Debug\Newtonsoft.Json.xml

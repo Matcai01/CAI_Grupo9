@@ -43,3 +43,5 @@ C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.cspro
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\Mat\Desktop\TP CAI\CAI_Grupo9\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.dll
+C:\Users\uma38\github\CAI_Grupo9\Persistencia\bin\Debug\Newtonsoft.Json.xml
