@@ -99,6 +99,10 @@ namespace Negocio
             {
                 error = "No ha ingresado una cantidad valida....";
             }
+            else if (cantidadInt < 1)
+            {
+                error = "No se pueden ingresar cantidades menores a uno...";
+            }
             else if (productoSeleccionado.Stock < cantidadInt)
             {
                 error = "No puede ingresar esa cantidad ya que supera al stock actual...";

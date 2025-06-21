@@ -17,15 +17,11 @@ namespace TemplateTPCorto
         public FormOperador()
         {
             InitializeComponent();
-        }
-
-        private void FormVentas_Load(object sender, EventArgs e)
-        {
-
             CargarClientes();
             CargarCategoriasProductos();
             IniciarTotales();
         }
+
 
         private void IniciarTotales()
         {
@@ -87,7 +83,6 @@ namespace TemplateTPCorto
                 MessageBox.Show("Se ha agregado con exito el producto al carrito!");
             }
         }
-
         public void SumarTotales(int precio)
         {
             VentasNegocio ventasNegocio = new VentasNegocio();
@@ -145,7 +140,6 @@ namespace TemplateTPCorto
             lblTotal.Text = total.ToString();
         }
 
-
         private void btnCargar_Click(object sender, EventArgs e)
         {
             VentasNegocio ventasNegocio = new VentasNegocio();
@@ -165,8 +159,11 @@ namespace TemplateTPCorto
                     MessageBox.Show("Ha ocurrido un error al momento de cargar la venta...");
                 }
                 lstCarrito.Items.Clear();
+                lblSubTotal.Text = "0";
+                lblTotal.Text = "0";
             }
         }
+
 
         public List<ProductoCarrito> DevolverProductosCarrito()
         {

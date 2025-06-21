@@ -75,6 +75,7 @@
             this.btnListarProductos.TabIndex = 35;
             this.btnListarProductos.Text = "Listar productos";
             this.btnListarProductos.UseVisualStyleBackColor = true;
+            this.btnListarProductos.Click += new System.EventHandler(this.btnListarProductos_Click);
             // 
             // btnCargar
             // 
@@ -85,6 +86,7 @@
             this.btnCargar.TabIndex = 34;
             this.btnCargar.Text = "Cargar Venta";
             this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // btnQuitar
             // 
@@ -95,6 +97,7 @@
             this.btnQuitar.TabIndex = 33;
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
             // lblSubTotal
             // 
@@ -115,6 +118,7 @@
             this.btnAgregar.TabIndex = 31;
             this.btnAgregar.Text = "Agregar a carrito";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtCantidad
             // 
