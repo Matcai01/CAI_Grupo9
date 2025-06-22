@@ -158,9 +158,7 @@ namespace TemplateTPCorto
                 {
                     MessageBox.Show("Ha ocurrido un error al momento de cargar la venta...");
                 }
-                lstCarrito.Items.Clear();
-                lblSubTotal.Text = "0";
-                lblTotal.Text = "0";
+                LimpiarCarrito();
             }
         }
 
@@ -173,6 +171,13 @@ namespace TemplateTPCorto
                 productosCarrito.Add(producto);
             }
             return productosCarrito;
+        }
+
+        public void LimpiarCarrito()
+        {
+            lstCarrito.Items.Clear();
+            lblSubTotal.Text = "0";
+            lblTotal.Text = "0";
         }
     }
 
