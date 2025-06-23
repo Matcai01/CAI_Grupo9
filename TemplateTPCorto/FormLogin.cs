@@ -54,6 +54,7 @@ namespace TemplateTPCorto
                 }
                 else
                 {
+                    loginNegocio.ModificarUltimoIngreso(credencial);
                     RedirigirPreguntarCambioPass(credencial);
                     IdentificarPerfilUsuario(credencial);
                 }

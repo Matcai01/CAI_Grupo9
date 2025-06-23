@@ -134,6 +134,14 @@ namespace Negocio
             return perfil;
         }
 
+        public void ModificarUltimoIngreso(Credencial credencialUsuario)
+        {
+            string registro = credencialUsuario.Legajo + ";" + credencialUsuario.NombreUsuario + ";"
+                + credencialUsuario.Contrasena + ";" + credencialUsuario.FechaAlta.ToShortDateString() + ";"
+                + DateTime.Now.ToShortDateString();
+            usuarioPersistencia.BorrarDatos(credencialUsuario.Legajo, "credenciales.csv");
+            usuarioPersistencia.AgregarDatos("credenciales.csv", registro);
+        }
 
 
     }
